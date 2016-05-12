@@ -1,0 +1,18 @@
+CREATE TABLE [dbo].[t_admin](
+	[nom_admin] [nvarchar](50) NOT NULL,
+	[contrasena] [nvarchar](50) NOT NULL,
+)
+
+
+
+
+insert into t_admin values('Administrador', '1234')
+
+
+
+CREATE TABLE t_nuevo_pass ( 
+       PASS VARCHAR(200),
+       USUARIO VARCHAR(200)
+       )
+
+

@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[firmacertificacion](
+	[cod_epl] [nvarchar](50) NOT NULL,
+	[nombre] [nvarchar](50) NOT NULL,
+	[cargo] [nvarchar](50) NOT NULL,
+)
+
+
+
+
+insert into t_admin values('52057681', 'Diana Anglo','Gerente')

@@ -1,0 +1,91 @@
+.monitores {
+	background-image: url(../imagenes/monitores.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-align: right;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+.piepag {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+.certificados {
+	color: #FFF;
+	background-image: url(../imagenes/list_24x21w.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	font-variant:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:45px;
+}
+.comprobantes {
+	color: #FFF;
+	background-image: url(../imagenes/document_alt_stroke_18x24.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	font-variant:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:45px;
+}
+.mon {
+	color: #FFF;
+	background-image: url(../imagenes/chart_24x24.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	font-variant:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:45px;
+}
+.hv {
+	color: #FFF;
+	background-image: url(../imagenes/book_24x24.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	font-variant:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:45px;
+}
+.menuhv {
+	color: #0194ca;
+	background-image: url(../imagenes/book_16x16.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	font-variant:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:35px;
+	text-align:left
+
+}
+
+.barramenu {
+	background-image: url(../imagenes/barra_menu.png);
+	background-repeat: repeat-x;
+	background-position: left 43px;
+}
+.per {
+	color: #FFF;
+	background-image: url(../imagenes/user_18x24.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	font-variant:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:45px;
+}

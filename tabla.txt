@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[Retenedor](
+	[nombres] [nvarchar](50) NOT NULL,
+	[apellidos] [nvarchar](50) NOT NULL,
+	[descripcion] [nvarchar](150) NOT NULL,
+	[cedula] [numeric](18, 0) NOT NULL,
+ CONSTRAINT [PK_Retenedor] PRIMARY KEY CLUSTERED 
+(
+	[cedula] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+
+
+
+insert into Retenedor values('Julian Camilo', 'Morales Velez', 'SIN FIRMA AUTOGRAFA ARTICULO 10','16829743')

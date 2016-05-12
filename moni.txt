@@ -1,0 +1,38 @@
+clase comprobante 
+
+function fecha_comprobante(){
+	
+	$sql="select convert(varchar,fecha,110)as fecha from totales_pago
+              where ano_ini='$this->ano'
+              and per_ini='$this->per_ini' 
+              and liq_ini='$this->liq_ini' 
+              and tip_pag='$this->tip_pag' 
+              and cod_epl = '$this->codigo'";
+	      global $conn;
+	      $array=null;
+	      $rs=$conn->Execute($sql);
+	      if($rs){
+	$fila=@$rs->FetchRow();
+	
+	
+	  $array=$fila["fecha"];
+	
+	
+	}else{
+	    
+	    $array=null;
+	}
+	return $array;
+    }
+
+
+en el pdf.php
+
+cabecera
+
+$com->datos(12).'  Fecha '.$com->fecha_comprobante());
+
+
+
+envioo
+$mail->addbinattachement("comprobante_pago".$com->fecha_comprobante().".pdf", $content_PDF); 

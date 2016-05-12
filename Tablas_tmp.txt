@@ -1,0 +1,117 @@
+
+                                                                     
+                                             
+-----------tmp_hoja_vida----------
+
+CREATE TABLE [dbo].[tmp_empleados_gral](
+	[cod_epl] [varchar](16) NULL,
+	[cod_nie] [varchar](10) NULL,
+	[dir_epl] [varchar](50)  NULL,
+	[sexo] [varchar](1) NULL,
+	[cod_civ] [varchar](10) NULL,
+	[ciu_nac] [varchar](10) NULL,
+	[nom_cge] [varchar](50) NULL,
+	[comfena] [varchar](20) NULL,
+	[sub_fam] [decimal](22, 5) NULL,
+	[lib_mil] [varchar](12) NULL,
+	[gru_san] [varchar](4) NULL,
+	[num_iss] [varchar](12) NULL,
+	[num_hjo] [decimal](22, 2) NULL,
+	[tel_1] [varchar](12) NULL,
+	[tallas] [varchar](20) NULL,
+	[calzado] [varchar](20) NULL,
+	[fec_nac] [datetime] NULL,
+	[cod_ciu] [varchar](10) NULL,
+	[distrito_lib] [varchar](20) NULL,
+	[clase_lib] [varchar](20) NULL,
+	[campo1] [varchar](40) NULL,
+	[campo2] [varchar](40) NULL,
+	[campo3] [varchar](40) NULL,
+	[campo4] [varchar](40) NULL,
+	[campo5] [varchar](40) NULL,
+	[celular] [varchar](12) NULL,
+	[beeper] [varchar](20) NULL,
+	[tel_2] [varchar](12) NULL,
+	[email] [varchar](35) NULL,
+	[dir_epl2] [varchar](60) NULL,
+	[lic_con] [varchar](20) NULL,
+	[vto_lcon] [datetime] NULL,
+	[cer_jud] [varchar](20) NULL,
+	[vto_cjud] [datetime] NULL,
+	[cod_piel] [varchar](10) NULL,
+	[cod_cab] [varchar](10) NULL,
+	[cod_ojo] [varchar](10) NULL,
+	[cod_cont] [varchar](10) NULL,
+	[estatura] [decimal](6, 2) NULL,
+	[peso] [decimal](6, 2) NULL,
+	[cod_bar] [varchar](12) NULL,
+	[regimen_iss] [varchar](1) NULL,
+	[cod_jefe] [varchar](12) NULL,
+	[fec_eta_lec] [datetime] NULL,
+	[fec_eta_prod] [datetime] NULL,
+	[num_contrato] [varchar](50) NULL,
+	[fec_vto_carne] [datetime] NULL,
+	[esp_prac_sena] [varchar](150) NULL
+) 
+-------------------------------------
+
+---------------tmp_parientes-----------
+CREATE TABLE [dbo].[tmp_parientes](
+	[cod_epl] [varchar](15) NOT NULL,
+	[cod_par] [varchar](12) NOT NULL,
+	[tipo_fam] [varchar](20) NULL,
+	[nom_par] [varchar](20) NULL,
+	[ape_par] [varchar](20) NULL,
+	[tip_doc] [varchar](2) NULL,
+	[cedula] [varchar](12) NULL,
+	[tip_pco] [varchar](12) NULL,
+	[sexo] [varchar](1) NULL,
+	[cod_civ] [varchar](10) NULL,
+	[fec_nac] [datetime] NULL,
+	[tip_ocup] [varchar](20) NULL,
+	[estudia] [varchar](2) NULL,
+	[cod_ciu] [varchar](10) NULL,
+	[relacion] [varchar](20) NULL,
+	[cod_nie] [varchar](12) NULL,
+	[cod_nie_aux] [varchar](12) NULL,
+	[cod_ent] [varchar](12) NULL,
+	[pension] [decimal](22, 4) NULL,
+	[matricula] [decimal](22, 4) NULL,
+	[diagnostico] [varchar](700) NULL,
+	[tipo_vinculo] [varchar](1) NULL,
+	[cod_zona] [varchar](2) NULL,
+	[fin_rel] [varchar](1) NULL,
+	[fecha_fin_rel] [datetime] NULL,
+	[cod_fin_rel] [varchar](3) NULL,
+	[discapacitado] [varchar](1) NULL,
+	[fec_ini] [datetime] NULL,
+	[fec_fin] [datetime] NULL,
+	[grd_apro] [int] NULL,
+	[cod_ttp] [varchar](12) NULL
+)
+--------------------------------------------
+
+
+--------educacion_formal y no_formal--------
+
+CREATE TABLE [dbo].[tmp_cap_fictec](
+	[cod_epl] [varchar](12) NOT NULL,
+	[tip_est] [varchar](1) NOT NULL,
+	[cod_clp] [varchar](12) NULL,
+	[cod_ttp] [varchar](12) NULL,
+	[obt_tit] [varchar](2) NULL,
+	[cod_tca] [varchar](12) NULL,
+	[cod_prc] [varchar](12) NULL,
+	[cod_area] [varchar](12) NULL,
+	[cod_mdc] [varchar](12) NULL,
+	[fec_ini] [datetime] NULL,
+	[fec_fin] [datetime] NULL,
+	[tiempo] [decimal](22, 0) NULL,
+	[cod_uni] [decimal](22, 0) NULL,
+	[cod_enti] [varchar](12) NULL,
+	[cod_ciu] [varchar](10) NULL,
+	[cod_pai] [varchar](12) NULL,
+	[CSTVO_CAP] [int] NULL
+)
+
+----------------------------------------------
